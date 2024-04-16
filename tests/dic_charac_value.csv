@@ -1,0 +1,83 @@
+id,name,charac_id,positive_value,is_default
+1,Présentielle,1,0,False
+100,RAS,1,0,True
+2,"Télétravail occasionnel (rendez-vous médicaux, attente d'une livraison) ou de circonstances exceptionnelles",1,20,False
+101,Télétravail partiel ou hybride strictement inférieur à 2j par semaine,1,80,False
+102,Télétravail partiel ou hybride supérieur ou égale à 2j par semaine,1,100,False
+3,Télétravail à temps plein,1,100,False
+4,Horaire stricte,2,0,False
+200,RAS,2,0,True
+5,Heure d'arrivée et de départ flexible,2,80,False
+6,Flexibilité totale des horaires,2,100,False
+7,Légal,3,0,False
+300,RAS,3,0,True
+9,Supérieurs au légal,3,100,False
+10,Non flexible,4,0,False
+400,RAS,4,0,True
+11,Flexible,4,100,False
+12,Légal,5,0,False
+500,RAS,5,0,True
+13,Supérieurs au légal,5,100,False
+14,Pas de programme de formation,6,0,False
+600,RAS,6,20,True
+601,Plan de formation à la demande de l'employé,6,60,False
+15,Accès à des bases de données de formation,6,80,False
+16,Programme de formation contenue,6,100,False
+17,Aucun coaching/mentorat,7,0,False
+700,RAS,7,0,True
+18,Session de coaching / mentorat à la demande,7,80,False
+701,Session de coaching / mentorat régulièrement,7,100,False
+19,Jamais,8,0,False
+800,Organisé en privé par les employés,8,0,False
+801,RAS,8,0,True
+802,Afterwork une fois par trimestre,8,60,False
+803,Afterwork au moins une fois par mois non payé par l'entreprise,8,80,False
+20,Afterwork au moins une fois par mois payé par l'entreprise,8,100,False
+21,Non,9,0,False
+900,Déjeuner d'équipe,9,20,False
+901,RAS,9,20,True
+22,Journée d'équipe,9,80,False
+23,Voyages d'équipe,9,100,False
+24,RAS,10,0,True
+1001,Non,10,0,False
+25,Oui,10,100,False
+26,RAS,11,0,True
+1101,Rien n'est proposé aux salariés,11,0,False
+1102,Salle de sport dans les locaux,11,100,False
+1103,Fianncement abonnenment de sport,11,100,False
+27,Carte de sport,11,100,False
+28,RAS,12,60,True
+29,Légal,12,60,False
+30,Au dessus du légal,12,80,False
+31,100%,12,100,False
+34,Non,14,0,False
+1300,RAS,14,0,True
+35,Moins de 8€,14,60,False
+36,Entre 8€ et 10€,14,80,False
+37,Supérieur à 10€,14,100,False
+1400,RAS,15,0,True
+1401,Non,15,0,False
+1402,Non concerné,15,-1,False
+38,Oui,15,80,False
+39,Oui + Choix de la voiture,15,100,False
+1500,Non,16,60,False
+1501,RAS,16,60,True
+40,Oui,16,80,False
+41,Oui + Choix du mobile,16,100,False
+42,Non,17,60,False
+1600,RAS,17,60,True
+43,Oui,17,100,False
+44,Non,18,60,False
+45,RAS,18,60,True
+46,Oui,18,100,False
+1700,Non concerné,18,-1,False
+47,Inférieur à la moyenne,19,0,False
+1800,RAS,19,20,True
+48,Dans la moyenne,19,60,False
+49,Supérieur à la moyenne,19,100,False
+1900,Non,20,0,False
+1901,RAS,20,0,True
+50,Oui,20,100,False
+2001,Politique d'augmentation à la demande du salarié,21,0,False
+51,RAS,21,40,True
+52,Oui,21,100,False

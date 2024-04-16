@@ -1,0 +1,9 @@
+# Generated files
+__pycache__
+*.pyc
+/.pytest_cache
+/.coverage*
+/dist
+# IDE configuration
+/.vscode/*
+!/.vscode/settings.json

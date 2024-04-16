@@ -1,0 +1,93 @@
+id,sector_id,name
+1,1,Aménagement / Design
+2,1,Architecture
+3,2,Association
+4,2,ONG
+5,2,Fondation
+6,3,FinTech / InsurTech
+7,3,Finance
+8,3,Assurance
+9,3,Banque
+10,4,IT / Digital
+11,4,Stratégie
+12,4,Organisation / Management
+13,4,Audit
+14,4,Expertise comptable
+15,4,Transaction Services
+16,4,Supply Chain
+17,5,Média
+18,5,Sport
+19,5,Télévision / Production audiovisuelle
+20,5,Jeux vidéo
+21,5,Musique
+22,5,Edition
+23,5,Cinéma
+24,5,Presse écrite
+25,5,Musées
+26,5,Radio
+27,5,Art
+28,5,Théatre
+29,5,Loteries / Jeux de hasard
+30,6,E-commerce
+31,6,Distribution sélective
+32,6,Grande distribution
+33,7,Formation
+34,7,Education
+35,7,EdTech
+36,8,Agence de recrutement
+37,8,Ressources humaines
+38,9,Restauration
+39,9,FoodTech
+40,9,Grande consommation
+41,9,Boissons
+42,9,Épicerie fine
+43,10,Tourisme
+44,10,Hôtellerie
+45,10,Loisirs
+46,11,Commercial
+47,11,Particulier
+48,12,Énergie
+49,12,Electronique / Télécommunications
+50,12,Bâtiment / Travaux publics
+51,12,Pharmaceutique / Biotechnologique
+52,12,Automobile
+53,12,Agroalimentaire / Nutrition animale
+54,12,Aéronautique / Spatiale
+55,12,Métallurgie
+56,12,Ferroviaire
+57,13,Ingénieries Spécialisées
+58,13,Bureau d'études et d'ingénierie
+59,14,Service juridique
+60,14,Justice
+61,15,Mobilité
+62,15,Transports maritime et routier
+63,16,Mode
+64,16,Cosmétique
+65,16,Luxe
+66,16,Art de vivre
+67,16,Joaillerie
+68,17,Marketing / Communication
+69,17,Digital
+70,17,Publicité en ligne
+71,17,Publicité de rue
+72,17,AdTech  / MarTech
+73,17,Design
+74,17,Relations publiques
+75,18,Santé
+76,18,MedTech
+77,19,SocialTech
+78,19,Services à la personne
+79,18,Économie collaborative
+80,20,Environnement / Développement durable
+81,20,GreenTech
+82,22,Incubateur / Accélérateur
+83,22,Co-working
+84,22,SaaS / Cloud Services
+85,22,Logiciels
+86,22,Application mobile
+87,22,Intelligence artificielle / Machine Learning / Automatisation
+88,22,Big Data
+89,22,Cybersécurité
+90,22,Objets connectés
+91,22,Robotique
+92,22,Blockchain

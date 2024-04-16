@@ -1,0 +1,79 @@
+id,sub_sector_id,name
+6084d597-1ce4-4b36-b7b8-6fbc8007b045,10,Services d’assistance informatique
+e33c4a60-0a4a-4e37-bb3c-424e253c8664,10,Services d'assistance informatique
+203d2409-30ef-4cc3-899c-c9e803999165,52,Industrie des équipements de transport
+4b005f6f-59c2-4cc9-8dfc-7ae544e1161a,47,Agences immobilières
+0ad353b7-f770-411a-873f-e0f603c33060,10,Informatique
+a2c79976-f0ae-447c-b206-24346b3df62c,85,Développement de logiciels
+f3b46cf8-7ae2-4775-a461-2094a0850615,36,Recrutement
+03f635d5-4c67-4e43-9ac3-7413a50e58f3,10,Conseil aux entreprises
+c5429258-7f12-4d2e-b258-2f4e32ca84b5,36,Ressources humaines et recrutement
+be07d6a0-4d02-44a3-8ee0-325786fd2263,12,Management et conseil aux entreprises
+35168287-5f93-4d9c-8bd0-b13fbc674efd,7,Investissement et gestion des actifs
+34c75f0c-493e-43ba-8daa-d5622746706d,38,Restaurants et cafés
+6988fba4-f170-4ceb-b6de-fa7207fb2c34,48,Énergie et infrastructures
+b4cd0c7d-a064-4498-b788-c4c5c71a6532,48,Énergie et exploitation des ressources naturelles
+5ecce41c-3dde-4dd3-b507-43e6b6c01b40,34,Enseignement et formation
+d9d0c38f-53ca-4d81-adda-91f865940377,85,Solutions logicielles et réseau d’entreprise
+380367c5-1c9b-49c2-974b-7ab765cc07d2,55,Industrie manufacturière
+b48b6eb1-8b87-46f6-9a67-ec8dddebccfc,74,Publicité et relations publiques
+dae19af9-a12c-4b67-b304-190d92d1e89e,51,Biotechnologie
+d2bbff4e-855b-4994-ad0b-3c193b38f6b8,51,Pharmaceutique et biotechnologie
+0eee0ccb-6c14-4e77-a7fb-2babc9e43817,31,Commerce de détail et de gros
+57ede022-0f40-4354-888c-a559e6baf1da,68,Médias et communication
+50917073-61db-434a-acb6-d090ce4309f6,59,Services juridiques
+9362a5bd-59ac-4148-b77b-ae2012602c40,31,Magasins d'accessoires personnels et de beauté
+50aa7090-30c5-467f-9408-3b5aa8583583,36,Cabinets de recrutement et agences d'intérim
+53da33ab-6b18-4f5f-a30d-95c917722c4a,8,Agences et courtiers d'assurance
+bf8cbc5e-b0ae-4322-8892-ceb56fb8a4a1,31,Matériel informatique
+5bdb73ad-4298-4aa5-a91b-170fff4e7fb7,27,"Arts, divertissement et loisirs"
+0a7bae31-1fb1-40bb-916d-c34ef553719e,7,Traitement des transactions financières
+7338b1f5-ef97-41fb-b421-13ebf040ffd2,32,"Grands magasins, magasins de vêtements et de chaussures"
+9afb3852-90b4-4ef7-b4fa-bd9f8347b2f0,44,Hôtellerie et tourisme
+b5875850-e368-4621-a9b2-f8e52e132da2,8,Compagnies d'assurance
+61c752b4-a88a-4483-9bfb-bc504cc226d9,61,Transport de biens et de personnes
+370d20a7-c5d8-4cfd-beb6-c0bb608f966a,51,Production chimique
+bb00d696-dcc1-4c50-96da-73473d17901d,84,Services web
+44268243-a2ad-48e2-83cb-7cb9138591ff,53,Industrie alimentaire
+19b42452-f3e2-4a77-865d-11d0bd658a05,53,Industrie des biens de consommation
+7441920a-3365-4813-a33d-69f844ec7ce7,52,Industrie des équipements de transport
+5f96f8a0-d662-4fbe-879e-2bf829b22120,49,Production d'articles électroniques
+9d2c81fb-32b2-4180-a8cc-e47ead84d25d,78,Services aux particuliers
+9db31329-462e-487e-8473-5271a554643d,87,Intelligence artificielle / Machine Learning
+aafd642f-fba7-4970-b086-b969dd76c1b3,69,Digital Marketing / Data Marketing
+394a2d6d-cd80-4f41-bf82-c5ce91114234,14,Gestion comptable et fiscale
+95f8c2d6-2213-48e5-8b87-c823139b44e1,51,Biotechnologies et pharmaceutique
+5ad6957a-8c4a-458a-8de9-a5ee37844e5c,75,Services de santé et hôpitaux
+9443a499-6eac-4bce-bfc0-d8fd9373880b,54,Aérospatiale et Défense
+0c27f99a-cf90-4514-9ff2-e3d6dff67460,55,Industrie minière et métallurgique
+0690fbab-c997-4059-a746-1ddaeb6816c2,54,Aérospatiale et défense
+f5b3d932-98bd-4b84-8032-be3dfa6f5e6e,62,Logistique
+399e8469-66bc-41e3-a655-8f20e3fd8fb8,34,Services d’enseignement et de formation
+395118b1-6aaa-4abf-b136-4038e7cb65b4,49,Production d’articles électroniques
+33e85e4c-2432-4be4-b258-b177c3accba0,34,Services d'enseignement et de formation
+cb6fbc8b-a33b-408e-8b64-202104a58748,18,Sports et loisirs
+633504a7-4afc-4c54-8743-6107f17c60b2,49,Télécommunications
+91c74f16-dc33-422d-9359-09203f5d38a1,12,Conseil en ressources humaines
+56d19500-a39c-4744-ab17-441ba6b1834d,48,Energie
+3be03537-347c-4479-a50d-eb73dfbc4429,8,Services bancaires et de prêts
+626e3bdb-a1b8-4695-b61c-4e5b758be493,34,Établissements d’enseignement supérieur
+9db71529-5d98-4e86-a143-ff4547fd7d4e,76,Industrie des produits santé
+5c3950b1-21bc-4d4e-bd0f-7d259079bbb6,2,Architecture et ingénierie
+e48b5769-e73d-4a1d-a7de-f392d5442e55,56,Services ferroviaires
+ee9ff392-a0e6-4427-a319-d97d1ab8f00d,61,Services de taxi et de chauffeur
+9aeedbf2-03b7-4c63-86a2-68c0b0856e08,32,Commerce de gros
+697066fe-fab8-44a3-86ee-cb45cbd81d3b,4,ONG et associations à but non lucratif
+b7138655-62e3-4e93-a778-93b8c92c0f5c,32,Grandes surfaces
+08323204-5940-4020-adc0-490d35e4f740,47,Immobilier
+48522f89-bd33-4fdf-be77-284983fc7bc1,49,Production de machines
+13fb53e6-8271-45c1-8616-a049796a57f0,34,Établissements d'enseignement supérieur
+21ce07cb-cd42-4182-b9d5-1c15e9859fc4,50,"Services de construction, réparation et maintenance"
+d1e4fe4b-5188-4cdc-a87c-1967a05e8892,8,Compagnies d’assurance
+e5dcc311-4624-4387-9238-4b8a3c225436,64,Magasins d’accessoires personnels et de beauté
+e4ccf869-631d-4c36-bcf6-8ac817248b4b,18,Magasins de sport
+4326c60d-3f98-4c62-a1b8-da6dc781e268,68,Médias audiovisuels
+f80983aa-38a6-4a38-9e3f-10529e56e4af,22,Culture et divertissement
+2bbd79fb-27d7-4b3f-92b9-6ded15c33e3f,78,Blanchisserie et nettoyage à sec
+e6cdb2e1-d7e6-45e9-bba5-758677e38e1e,7,Bourses de valeurs
+ef8be500-5db3-48de-9020-206d5e7b4799,23,Industrie cinématographique
+9e8929ed-43a5-46e2-b375-8bf7daeccc2d,31,Autres magasins de détail
