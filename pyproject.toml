@@ -1,12 +1,12 @@
 [tool.poetry]
 name = "otm-transformer"
-version = "0.1.0"
+version = "0.1.4"
 description = ""
 authors = ["lduchesne"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = "^3.10"
 pandas = "^2.2.2"
 pydantic = "^2.7.0"
 openai = "^1.17.1"

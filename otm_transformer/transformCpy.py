@@ -19,7 +19,8 @@ def transform(companyName: str, companies: DataFrame, sectorDic : DataFrame, sub
    clientLLM = LLMClient(apiKey="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")
 
    LOGGER.info(f'Start to extract data for company {companyName}')
-   companiesFound = companies[companies['name'] == companyName]
+   companies['name'] = companies['name'].str.lower()
+   companiesFound = companies[companies['name'] == companyName.lower()]
    LOGGER.info(f'Found in company list this associated companies :')
    LOGGER.info(companiesFound)
 
@@ -129,9 +130,18 @@ def extractSize(sizeInScrapper: list[str], companySizeDic : DataFrame ):
       return None
    numbers=[]
    for size in sizeInScrapper:
-      found = re.findall(r'\d+', size.strip().replace(" ", ""))
-      if len(found) > 0:
-         numbers.extend(found)
+      if size is None or (type(size) != str and math.isnan(size)):
+         continue
+      elif type(size) != str:
+         numbers.append(size)
+      else:
+         found = re.findall(r'\d+', size.strip().replace(" ", ""))
+         if len(found) > 0:
+            numbers.extend(found)
+
+   # if no number set to size 1
+   if len(numbers) == 0:
+      return 1
 
    maxNumber = int(max(numbers))
    sizeId = None
@@ -151,6 +161,8 @@ def extractAndMapSectors(sectorsInScrapper: str, sectorDic: DataFrame, subSector
       if len(found) > 0 :
          elt = found.iloc[0]
          subSectors.append(elt.sub_sector_id)
+         subSecor = sectorDic[sectorDic['id'] == elt.sub_sector_id]
+         sectors.append(subSecor.iloc[0].sector_id)
       else:
          found = sectorDic[sectorDic['name'] == value.strip()]
          if len(found) > 0: 
