@@ -1,21 +1,21 @@
-id,name,theme_id,field_json_name,is_multiple,multiple
-1,Politique de télétravail,1,teleworking,False,3
-3,Congés,1,holiday,False,2
-5,Congés parents,1,parental_leave,False,2
-6,Plan de formation,2,training,False,2
-8,Afterwork,3,after_work,True,1
-9,Team-building,3,team_building,True,3
-10,Salle de sieste,3,nap_room,False,1
-12,Prise en charge de la complémentaire santé,4,complementary_health,False,1
-14,Ticket-restau,5,restaurant_card,False,3
-18,Forfait télétravail,5,teleworking_allowance,False,1
-19,Niveau de rémunération,6,salary,False,3
-20,Prime / Intéressement,6,bonus_interest,False,2
-21,Grille de salaires publique,6,,False,2
-2,Aménagement des horaires,1,arranged_schedules,False,1
-4,Lieu de travail,1,working_place,False,2
-11,Sport,3,sport,True,2
-15,Voiture de fonction,5,comapny_car,False,2
-16,Smartphone pro,5,company_smartphone,False,2
-17,Choix de l'ordinateur,5,computer_choice,False,2
-7,Coaching/mentorat,2,coaching_mentorat,False,1
+id,theme_id,field_json_name,is_multiple,multiple,name,is_sum,sum_detail
+1,1,teleworking,False,3,{'fr': 'Politique de télétravail'},False,"{'0': None, '1': None, '2': None, '3': None, '4': None}"
+2,1,arranged_schedules,False,1,{'fr': 'Aménagement des horaires'},False,"{'0': None, '1': None, '2': None, '3': None, '4': None}"
+4,1,working_place,False,2,{'fr': 'Lieu de travail'},False,"{'0': None, '1': None, '2': None, '3': None, '4': None}"
+7,2,coaching_mentorat,False,1,{'fr': 'Coaching/mentorat'},False,"{'0': None, '1': None, '2': None, '3': None, '4': None}"
+14,5,restaurant_card,False,3,{'fr': 'Ticket-restau'},False,"{'0': None, '1': None, '2': None, '3': None, '4': None}"
+16,5,company_smartphone,False,2,{'fr': 'Smartphone pro'},False,"{'0': None, '1': None, '2': None, '3': None, '4': None}"
+17,5,computer_choice,False,2,"{'fr': ""Choix de l'ordinateur""}",False,"{'0': None, '1': None, '2': None, '3': None, '4': None}"
+19,6,salary,False,3,{'fr': 'Niveau de rémunération'},False,"{'0': None, '1': None, '2': None, '3': None, '4': None}"
+3,1,holidays,True,2,{'fr': 'Congés et absences'},True,"{'0': '0', '1': '40', '2': '60', '3': '80', '4': '100'}"
+5,1,parental_leave,True,2,{'fr': 'Parentalité'},True,"{'0': '0', '1': '60', '2': '80', '3': '100', '4': None}"
+6,2,training,True,2,{'fr': 'Formation'},True,"{'0': '0', '1': '60', '2': '80', '3': '100', '4': None}"
+9,3,team_building,True,3,{'fr': 'Team-building'},True,"{'0': '40', '1': '80', '2': '100', '3': None, '4': None}"
+10,3,work_office_life,True,1,{'fr': 'Vie au bureau'},True,"{'0': '0', '1': '60', '2': '80', '3': '100', '4': None}"
+12,4,complementary_health,False,1,{'fr': 'Mutuelle'},False,"{'0': None, '1': None, '2': None, '3': None, '4': None}"
+13,4,health_benefits,True,1,{'fr': 'Avantages Santé'},True,"{'0': '0', '1': '20', '2': '60', '3': '80', '4': '100'}"
+15,5,transport,True,2,{'fr': 'Transport'},True,"{'0': '40', '1': '80', '2': '100', '3': None, '4': None}"
+20,6,bonus_interest,True,2,{'fr': 'Avantages financiers'},True,"{'0': '40', '1': '80', '2': '100', '3': None, '4': None}"
+21,6,,False,2,"{'fr': ""Politique d'égalité salariale""}",False,"{'0': None, '1': None, '2': None, '3': None, '4': None}"
+22,7,,True,1,{'fr': 'Communication marque employeur'},True,"{'0': '0', '1': '40', '2': '60', '3': '80', '4': '100'}"
+23,8,inclusiveness,True,1,{'fr': 'Diversité & inclusivité'},True,"{'0': '0', '1': '80', '2': '100', '3': None, '4': None}"

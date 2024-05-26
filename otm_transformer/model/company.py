@@ -8,6 +8,7 @@ class CharacValue(BaseModel):
     characId: int
     characValueId: int 
     positiveValue: int
+    isMultiple: bool
     
 class Company(BaseModel):
     id: str

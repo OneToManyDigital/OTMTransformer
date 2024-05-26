@@ -1,83 +1,104 @@
-id,name,charac_id,positive_value,is_default
-1,Présentielle,1,0,False
-100,RAS,1,0,True
-2,"Télétravail occasionnel (rendez-vous médicaux, attente d'une livraison) ou de circonstances exceptionnelles",1,20,False
-101,Télétravail partiel ou hybride strictement inférieur à 2j par semaine,1,80,False
-102,Télétravail partiel ou hybride supérieur ou égale à 2j par semaine,1,100,False
-3,Télétravail à temps plein,1,100,False
-4,Horaire stricte,2,0,False
-200,RAS,2,0,True
-5,Heure d'arrivée et de départ flexible,2,80,False
-6,Flexibilité totale des horaires,2,100,False
-7,Légal,3,0,False
-300,RAS,3,0,True
-9,Supérieurs au légal,3,100,False
-10,Non flexible,4,0,False
-400,RAS,4,0,True
-11,Flexible,4,100,False
-12,Légal,5,0,False
-500,RAS,5,0,True
-13,Supérieurs au légal,5,100,False
-14,Pas de programme de formation,6,0,False
-600,RAS,6,20,True
-601,Plan de formation à la demande de l'employé,6,60,False
-15,Accès à des bases de données de formation,6,80,False
-16,Programme de formation contenue,6,100,False
-17,Aucun coaching/mentorat,7,0,False
-700,RAS,7,0,True
-18,Session de coaching / mentorat à la demande,7,80,False
-701,Session de coaching / mentorat régulièrement,7,100,False
-19,Jamais,8,0,False
-800,Organisé en privé par les employés,8,0,False
-801,RAS,8,0,True
-802,Afterwork une fois par trimestre,8,60,False
-803,Afterwork au moins une fois par mois non payé par l'entreprise,8,80,False
-20,Afterwork au moins une fois par mois payé par l'entreprise,8,100,False
-21,Non,9,0,False
-900,Déjeuner d'équipe,9,20,False
-901,RAS,9,20,True
-22,Journée d'équipe,9,80,False
-23,Voyages d'équipe,9,100,False
-24,RAS,10,0,True
-1001,Non,10,0,False
-25,Oui,10,100,False
-26,RAS,11,0,True
-1101,Rien n'est proposé aux salariés,11,0,False
-1102,Salle de sport dans les locaux,11,100,False
-1103,Fianncement abonnenment de sport,11,100,False
-27,Carte de sport,11,100,False
-28,RAS,12,60,True
-29,Légal,12,60,False
-30,Au dessus du légal,12,80,False
-31,100%,12,100,False
-34,Non,14,0,False
-1300,RAS,14,0,True
-35,Moins de 8€,14,60,False
-36,Entre 8€ et 10€,14,80,False
-37,Supérieur à 10€,14,100,False
-1400,RAS,15,0,True
-1401,Non,15,0,False
-1402,Non concerné,15,-1,False
-38,Oui,15,80,False
-39,Oui + Choix de la voiture,15,100,False
-1500,Non,16,60,False
-1501,RAS,16,60,True
-40,Oui,16,80,False
-41,Oui + Choix du mobile,16,100,False
-42,Non,17,60,False
-1600,RAS,17,60,True
-43,Oui,17,100,False
-44,Non,18,60,False
-45,RAS,18,60,True
-46,Oui,18,100,False
-1700,Non concerné,18,-1,False
-47,Inférieur à la moyenne,19,0,False
-1800,RAS,19,20,True
-48,Dans la moyenne,19,60,False
-49,Supérieur à la moyenne,19,100,False
-1900,Non,20,0,False
-1901,RAS,20,0,True
-50,Oui,20,100,False
-2001,Politique d'augmentation à la demande du salarié,21,0,False
-51,RAS,21,40,True
-52,Oui,21,100,False
+id,charac_id,positive_value,is_default,name
+1,1,0,False,{'fr': 'Présentielle'}
+100,1,0,True,{'fr': 'RAS'}
+2,1,20,False,"{'fr': ""Télétravail occasionnel (rendez-vous médicaux, attente d'une livraison) ou de circonstances exceptionnelles""}"
+200,2,0,True,{'fr': 'RAS'}
+5,2,80,False,"{'fr': ""Heure d'arrivée et de départ flexible""}"
+6,2,100,False,{'fr': 'Flexibilité totale des horaires'}
+10,4,0,False,{'fr': 'Non flexible'}
+400,4,0,True,{'fr': 'RAS'}
+17,7,0,False,{'fr': 'Aucun coaching/mentorat'}
+700,7,0,True,{'fr': 'RAS'}
+18,7,80,False,{'fr': 'Session de coaching / mentorat à la demande'}
+701,7,100,False,{'fr': 'Session de coaching / mentorat régulièrement'}
+28,12,60,True,{'fr': 'RAS'}
+34,14,0,False,{'fr': 'Non'}
+1300,14,0,True,{'fr': 'RAS'}
+35,14,60,False,{'fr': 'Moins de 8€'}
+36,14,80,False,{'fr': 'Entre 8€ et 10€'}
+37,14,100,False,{'fr': 'Supérieur à 10€'}
+1500,16,60,False,{'fr': 'Non'}
+1501,16,60,True,{'fr': 'RAS'}
+40,16,80,False,{'fr': 'Oui'}
+41,16,100,False,{'fr': 'Oui + Choix du mobile'}
+42,17,60,False,{'fr': 'Non'}
+1600,17,60,True,{'fr': 'RAS'}
+43,17,100,False,{'fr': 'Oui'}
+47,19,0,False,{'fr': 'Inférieur à la moyenne'}
+1800,19,20,True,{'fr': 'RAS'}
+48,19,60,False,{'fr': 'Dans la moyenne'}
+49,19,100,False,{'fr': 'Supérieur à la moyenne'}
+2001,21,0,False,"{'fr': ""Politique d'augmentation à la demande du salarié""}"
+51,21,40,True,{'fr': 'RAS'}
+52,21,100,False,{'fr': 'Oui'}
+103,1,80,False,{'fr': '1-2 jours de télétravail'}
+104,1,100,False,{'fr': 'Télétravail à 100%'}
+105,1,100,False,{'fr': '3-4 jours de télétravail'}
+106,1,100,False,{'fr': 'Semaine de 4 jours'}
+4,2,0,False,{'fr': 'Horaire de travail stricte'}
+301,3,-2,False,{'fr': 'Congés payés'}
+302,3,-2,False,{'fr': 'RTT'}
+303,3,-2,False,{'fr': 'Congé sabatique'}
+304,3,-2,False,{'fr': 'Jours de bénévolat offers'}
+305,3,-2,False,{'fr': 'Congé vacances illimitées'}
+306,3,-2,False,{'fr': 'Congés payés supplémentaires'}
+401,4,80,False,{'fr': 'Télétravail uniquement de chez soi'}
+402,4,100,False,"{'fr': ""Télétravail de n'importe où""}"
+501,5,-2,False,{'fr': 'Congé pour enfants malades'}
+502,5,-2,False,{'fr': 'Congé paternité prolongé'}
+503,5,-2,False,{'fr': 'Congé maternité prolongé'}
+504,5,-2,False,{'fr': 'Prime de naissance'}
+505,5,-2,False,{'fr': 'Congé interruption spontannée de grosse'}
+506,5,-2,False,"{'fr': ""Aide à la garde d'enfants""}"
+507,5,-2,False,{'fr': 'Crèche'}
+508,5,-2,False,{'fr': 'Programme de retour de congé parental'}
+603,6,-2,False,{'fr': 'Formations en ligne'}
+604,6,-2,False,{'fr': 'Mentorat'}
+605,6,-2,False,{'fr': 'Financement des certifications'}
+16,6,-2,False,{'fr': 'Programme de formation continue'}
+902,9,-2,False,{'fr': 'Afterwork'}
+903,9,-2,False,{'fr': 'Séminaires et voyages'}
+900,9,-2,False,"{'fr': ""Déjeuner d'équipe""}"
+1002,10,-2,False,"{'fr': ""Restaurant d'entreprise""}"
+1003,10,-2,False,{'fr': 'Cuisine pour les employés'}
+1004,10,-2,False,{'fr': 'Collations à volonté'}
+1005,10,-2,False,{'fr': 'Animaux acceptés'}
+1006,10,-2,False,"{'fr': ""Salle d'allaitement""}"
+1007,10,-2,False,{'fr': 'Sport'}
+29,12,60,False,{'fr': 'Mutuelle légale'}
+30,12,80,False,{'fr': 'Prise en charge de la mutuelle au dessus du légal'}
+31,12,100,False,{'fr': ' Prise en charge à 100% de la mutuelle'}
+1200,13,-2,False,{'fr': 'Congé maladie'}
+1201,13,-2,False,{'fr': 'Solution de prévention santé mentale'}
+1202,13,-2,False,{'fr': 'Abonnement en salle de sport'}
+1203,13,-2,False,{'fr': 'Compte épargne santé'}
+1204,13,-2,False,"{'fr': ""Pension d'invalidité court terme""}"
+1205,13,-2,False,{'fr': 'Assurance dentaire'}
+1206,13,-2,False,{'fr': 'Assurance optique'}
+1403,15,-2,False,{'fr': 'Remboursement à 100% des transport public'}
+1404,15,-2,False,{'fr': 'Parking'}
+1405,15,-2,False,{'fr': 'Parking à vélo'}
+1406,15,-2,False,{'fr': 'Allocations de télétravail'}
+1407,15,-2,False,{'fr': 'Plan de mobilité durable'}
+1408,15,-2,False,{'fr': 'Location de vélo'}
+1409,15,-2,False,{'fr': 'Voiture de fonction'}
+50,20,-2,False,{'fr': 'Intéressement et participation'}
+1902,20,-2,False,"{'fr': ""Plan d'epargne entreprise (PEE)""}"
+1903,20,-2,False,{'fr': 'Aide au déménagement'}
+1904,20,-2,False,{'fr': 'Prime de cooptation'}
+1905,20,-2,False,"{'fr': ""Plan d'achat d'action""}"
+2002,21,100,False,{'fr': 'Grille de salaire publique'}
+2100,22,-2,False,{'fr': 'Blog'}
+2101,22,-2,False,{'fr': 'LinkedIn'}
+2102,22,-2,False,{'fr': 'Instagram'}
+2103,22,-2,False,{'fr': 'TikTok'}
+2104,22,-2,False,{'fr': 'Presse'}
+2105,22,-2,False,{'fr': 'Télé'}
+2106,22,-2,False,{'fr': 'Welcome to the Jungle'}
+2107,22,-2,False,{'fr': 'Indeed'}
+2108,22,-2,False,{'fr': 'Autres'}
+2200,23,-2,False,{'fr': 'Recrutement encourageant la diversité'}
+2201,23,-2,False,{'fr': 'Équipe dédiée à la diversité'}
+2202,23,-2,False,{'fr': 'Manifeste sur la diversité'}
+2203,23,-2,False,{'fr': 'Formation sur les biais inconscients'}
+2204,23,-2,False,{'fr': 'Accès aux personnes à mobilité réduite'}
