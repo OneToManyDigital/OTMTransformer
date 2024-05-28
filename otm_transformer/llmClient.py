@@ -1,12 +1,8 @@
-import math
 import time
 from openai import OpenAI
 import logging
-from .model.company import CharacValue 
-import json
 import pandas as pd
 from pandas import DataFrame
-import json
 from .characConstants import *
 
 LOGGER = logging.getLogger(__name__)
@@ -16,15 +12,18 @@ LOGGER = logging.getLogger(__name__)
 
 
 class OpenAICOnfig():
-    def __init__(self, apiKey , base_url = None , model = "gpt-4o"):
+    def __init__(self, apiKey , organization='org-BOSwCwpi8tnFwhFc3SO6opEy', project='proj_QXiReNihxPYbwgi45LYKqveK', base_url = None , model = "gpt-4o"):
         if apiKey is None:
             LOGGER.error("Cannot init LLMClient without api key in param")
-            self.api_key = apiKey
+            raise ValueError("The 'Open ai key' parameter is missing or empty")
+        self.api_key = apiKey
         if base_url is None:
-            self.base_url =  "https://api.openai.com"
+            self.base_url =  "https://api.openai.com/v1"
         else:
             self.base_url = base_url
         self.model = model
+        self.organization = organization
+        self.project = project
 
 class LLMClient():
     def __init__(self, config : OpenAICOnfig, characDic: DataFrame, characValDic: DataFrame, df_additional_info):
@@ -36,7 +35,9 @@ class LLMClient():
         self.config = config
         self.client = OpenAI(
             base_url=config.base_url,  # replace with your endpoint url
-                api_key=config.base_url,   # this is also the default, it can be omitted
+            api_key=config.api_key,   # this is also the default, it can be omitted
+            organization=config.organization,
+            project=config.project,
             )
         self.json_model=self.constrcut_json_template(characDic, characValDic, df_additional_info)
 
@@ -64,13 +65,12 @@ class LLMClient():
     def filterName(self,names ):
         result = []
         for name in names:
-            extractName=self.string_toJson_custom(name)['fr']
+            extractName=name['fr']
             if extractName != 'RAS':
                 result.append(extractName)
         return result
 
-    def string_toJson_custom(self, data: str):
-        return json.loads(data.replace("'fr'", '"fr"').replace(": '", ': "').replace("'}", '"}'))
+
     
     TEMPLATE_JOBS_PROMPT= '''
 You are now French AI Extractor.You are processing company job position.
@@ -121,7 +121,6 @@ Do not infer any data based on previous training, strictly use only source text 
 
         success = False
         attempt = 1
-        LOGGER.error('PRompt is: {q}')
         while not success and attempt <= max_attempts:
             try:
                         

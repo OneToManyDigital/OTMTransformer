@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "otm-transformer"
-version = "0.1.7"
+version = "0.1.11"
 description = ""
 authors = ["lduchesne"]
 readme = "README.md"

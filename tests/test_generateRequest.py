@@ -1,6 +1,11 @@
 import pandas as pd
 import pytest
 from otm_transformer.llmClient import LLMClient, OpenAICOnfig
+import json
+
+
+def string_toJson_custom( data: str):
+    return json.loads(data.replace("'fr'", '"fr"').replace(": '", ': "').replace("'}", '"}'))
 
 @pytest.fixture
 def sample_data():
@@ -10,7 +15,8 @@ def sample_data():
         'name': ["{'fr': 'Congés payés'}" ,"{'fr': 'RTT'}","{'fr': 'Congé sabatique'}", "{'fr': 'Horaire de travail stricte'}", "{'fr': 'Heure d\'arrivée et de départ flexible'}", "{'fr': 'Non flexible'}"]
     }
     df_main = pd.DataFrame(data)
-    
+    df_main['name'] = df_main['name'].apply(string_toJson_custom)
+
     metadata = {
         'id': [5, 2, 3],
         'is_multiple': [True, False, False],
@@ -35,6 +41,7 @@ def edge_case_data():
         'name': ["{'fr': 'Congés payés'}" ,"{'fr': 'RTT'}", "{'fr': 'Horaire de travail stricte'}"]
     }
     df_main = pd.DataFrame(data)
+    df_main['name'] = df_main['name'].apply(string_toJson_custom)
     
     metadata = {
         'id': [5, 2],
@@ -59,6 +66,8 @@ def csv_case_data():
     characDic = pd.read_csv('./tests/dic_charac.csv', low_memory=False)
     # Load characValDic
     characValDic = pd.read_csv('./tests/dic_charac_value.csv', low_memory=False)
+    
+    characValDic['name'] = characValDic['name'].apply(string_toJson_custom)
     additional_info = {
         'charac_id': [1],
         'additional_info': ['The legal is 30 days per year'
